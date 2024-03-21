@@ -1,0 +1,30 @@
+{
+  "applications": [
+    {
+      "name": "home",
+      "activeWhen": "^/$",
+      "remoteEntry": {
+        "url": "/remoteEntry.js",
+        "scope": "myWorkspaceHomeApp",
+        "module": "./myWorkspaceHomeApp",
+        "type": "webpack"
+      },
+      "label": "Home",
+      "route": "/",
+      "type": "home"
+    },
+    {
+      "name": "tasks",
+      "activeWhen": "^/tasks(/.*)?$",
+      "remoteEntry": {
+        "url": "/apps/tasks/remoteEntry.js",
+        "scope": "mwsTasks",
+        "module": "./mwsTasks",
+        "type": "webpack"
+      },
+      "label": "Tasks",
+      "route": "/tasks",
+      "type": "app"
+    }
+  ]
+}
