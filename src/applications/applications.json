@@ -38,6 +38,19 @@
       "label": "User Profile",
       "route": "/user-profile",
       "type": "user"
+    },
+    {
+      "name": "messages",
+      "activeWhen": "^/messages(/.*)?$",
+      "remoteEntry": {
+        "url": "/apps/messages/assets/remoteEntry.js",
+        "scope": "mwsMessages",
+        "module": "./mwsMessages",
+        "type": "module"
+      },
+      "label": "Messages",
+      "route": "/messages",
+      "type": "app"
     }
   ]
 }
