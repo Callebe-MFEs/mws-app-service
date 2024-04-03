@@ -18,11 +18,9 @@ RUN echo "mfe-service: $COMMIT_SHA" >> ./commit.sha
 
 FROM node:16.15.0-alpine
 
-LABEL maintainer="callebe.gomes@cnhind.com" \
+LABEL maintainer="callebedrums@gmail.com" \
       name="mfe-service" \
-      description="Nodejs express microservice" \
-      eu.mia-platform.url="https://www.mia-platform.eu" \
-      eu.mia-platform.version="0.1.0"
+      description="Nodejs express microservice"
 
 ENV NODE_ENV=production
 ENV LOG_LEVEL=info
